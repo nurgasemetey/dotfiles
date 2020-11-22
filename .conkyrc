@@ -1,0 +1,80 @@
+-- vim: ts=4 sw=4 noet ai cindent syntax=lua
+--[[
+Conky, a system monitor, based on torsmo
+
+Any original torsmo code is licensed under the BSD license
+
+All code written since the fork of torsmo is licensed under the GPL
+
+Please see COPYING for details
+
+Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+Copyright (c) 2005-2012 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+All rights reserved.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
+
+conky.config = {
+    alignment = 'top_right',
+    background = true,
+    border_width = 1,
+    double_buffer = true,
+    -- cpu_avg_samples = 2,
+    default_color = 'white',
+    color1 = 'FFD700',
+    color2 = 'ff3232',
+    color3 = 'white',
+    color4 = 'orange',
+    color5 = 'white',
+    color6 = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    draw_graph_borders = true,
+    draw_shades = false,
+    use_xft = true,
+    font = 'DejaVu Sans Mono:size=12',
+    gap_x = 0,
+    gap_y = 0,
+    -- text_buffer_size = 100,
+    minimum_height = 300,
+    maximum_height =500,
+    minimum_width = 200,
+    maximum_width = 220,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'panel',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_class = override,
+    own_window_hints = undecorated,below,sticky,skip_taskbar,skip_pager
+}
+
+-- conky.text = [[
+-- ${color1} ${exec cat /home/nurgasemetey/Desktop/scripts/constructive-living-phrases.txt}
+-- ${color2} ${exec cat /home/nurgasemetey/Desktop/scripts/current-task.txt}
+-- ]]
+conky.text = [[
+
+${color1}${exec cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/last-note.txt | fold -w 20}
+${color3}---------------
+${color2}Bullet Journal ${color3}
+${color3}---------------
+${color4}Meditation
+${color3}---------------
+${color5}Today Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros.sh} 
+${color5}Yesterday Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/previous-day-number-pomodoros.sh}
+${color3}---------------
+${color1}${exec python3 /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/python-last-intentions.py}
+
+]]

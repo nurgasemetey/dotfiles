@@ -1,0 +1,1 @@
+notify-send "Teamviewer" && paplay /home/nurgasemetey/Desktop/scripts/slow-spring-board.ogg

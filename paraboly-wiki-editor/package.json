@@ -1,0 +1,21 @@
+{
+    "name": "paraboly-wiki-editor",
+    "version": "1.0.0",
+    "productName": "Paraboly Wiki Editor",
+    "main": "app.js",
+    "scripts": {
+        "start": "electron app.js",
+        "bundle": "electron-packager --all"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "fs-extra": "8.1.0",
+        "highlight.js": "^9.15.10",
+        "json2md": "1.6.3",
+        "moment": "2.24.0"
+    },
+    "devDependencies": {
+        "electron": "^3.0.2",
+        "electron-packager": "^14.0.5"
+    }
+}
