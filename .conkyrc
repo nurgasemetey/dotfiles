@@ -31,7 +31,7 @@ conky.config = {
     border_width = 1,
     double_buffer = true,
     -- cpu_avg_samples = 2,
-    default_color = 'white',
+	default_color = 'white',
     color1 = 'FFD700',
     color2 = 'ff3232',
     color3 = 'white',
@@ -49,7 +49,7 @@ conky.config = {
     -- text_buffer_size = 100,
     minimum_height = 300,
     maximum_height =500,
-    minimum_width = 200,
+	minimum_width = 200,
     maximum_width = 220,
     own_window = true,
     own_window_class = 'Conky',
@@ -66,7 +66,7 @@ conky.config = {
 -- ]]
 conky.text = [[
 
-${color1}${exec cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/last-note.txt | fold -w 20}
+${color1}${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/last-note.sh | fold -w 20}
 ${color3}---------------
 ${color2}Bullet Journal ${color3}
 ${color3}---------------
