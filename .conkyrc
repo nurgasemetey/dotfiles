@@ -65,7 +65,6 @@ conky.config = {
 -- ${color2} ${exec cat /home/nurgasemetey/Desktop/scripts/current-task.txt}
 -- ]]
 conky.text = [[
-
 ${color1}${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/last-note.sh | fold -w 20}
 ${color3}---------------
 ${color2}Bullet Journal ${color3}
@@ -76,5 +75,4 @@ ${color5}Today Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemete
 ${color5}Yesterday Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/previous-day-number-pomodoros.sh}
 ${color3}---------------
 ${color1}${exec python3 /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/python-last-intentions.py}
-
 ]]
