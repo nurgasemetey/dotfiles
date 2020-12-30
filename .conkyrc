@@ -66,11 +66,26 @@ conky.config = {
 -- ]]
 conky.text = [[
 ${color4}Meditation
+
 ${color3}---------------
 ${color5}Today Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros.sh} 
 ${color5}Yesterday Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/previous-day-number-pomodoros.sh}
+
 ${color3}---------------
 ${color1}${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/last-note.sh | fold -w 20}
+
 ${color3}---------------
+${color4}00-03 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 0-3}
+${color4}03-06 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 3-6}
+${color4}06-09 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 6-9}
+${color4}09-12 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 9-12}
+${color4}12-15 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 12-15}
+${color4}15-18 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}
+${color4}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}
+${color4}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}
+
+${color3}---------------    
 ${color1}${exec python3 /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/python-last-intentions.py}
+
+
 ]]
