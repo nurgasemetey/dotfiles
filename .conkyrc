@@ -32,6 +32,7 @@ conky.config = {
     double_buffer = true,
     -- cpu_avg_samples = 2,
 	default_color = 'white',
+    update_interval = 1,
     color1 = 'FFD700',
     color2 = 'ff3232',
     color3 = 'white',
@@ -47,9 +48,9 @@ conky.config = {
     gap_x = 0,
     gap_y = 0,
     -- text_buffer_size = 100,
-    minimum_height = 300,
-    maximum_height =500,
-	minimum_width = 200,
+    minimum_height = 700,
+    maximum_height = 800,
+	minimum_width = 220,
     maximum_width = 220,
     own_window = true,
     own_window_class = 'Conky',
@@ -57,7 +58,12 @@ conky.config = {
     own_window_transparent = true,
     own_window_argb_visual = true,
     own_window_class = override,
-    own_window_hints = undecorated,below,sticky,skip_taskbar,skip_pager
+    own_window_hints = undecorated,below,sticky,skip_taskbar,skip_pager,
+
+
+    lua_load = '/mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/breath_ring.lua',
+	lua_draw_hook_pre = 'conky_main_rings',
+	lua_draw_hook_post = 'draw_text',
 }
 
 -- conky.text = [[
