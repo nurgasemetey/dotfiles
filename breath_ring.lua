@@ -33,7 +33,13 @@ settings_table = {
     },
 }
 
-
+ring_color_table = {}
+ring_color_table[0] = 0x7CFC00 
+ring_color_table[1] = 0xFFB6C1 
+ring_color_table[2] = 0xA52A2A
+ring_color_table[3] = 0x00FFFF
+ring_color_table[4] = 0x1E90FF
+ring_color_table[5] = 0xFFFF00
 -- ===============================================================================================================
 ----------------
 require 'cairo'
@@ -56,14 +62,18 @@ function draw_ring(cr, t, pt)
     local t_arc = t * (angle_f - angle_0)
     -- print(ring_w)
     -- *1 is used to convert str to number
-    secs = (os.date("%S")*1)%10
+    secs = (os.date("%S")*1)
+    remainder = (os.date("%S")*1)%10
+    -- print(secs)
+    -- print( math.floor(secs/10))
+    bgc=ring_color_table[math.floor(secs/10)]
     -- print(secs)
     -- secs_num = secs*2
     -- print(secs%10)
-    if (secs >= 0 and secs<=4) then
-        ring_w = 60 - secs*10
+    if (remainder >= 0 and remainder<=4) then
+        ring_w = 60 - remainder*10
     else
-        ring_w = 20 + (secs-5)*10
+        ring_w = 20 + (remainder-5)*10
     end
     -- print(ring_w)
     -- Draw background ring
