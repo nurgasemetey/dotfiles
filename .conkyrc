@@ -71,8 +71,6 @@ conky.config = {
 -- ${color2} ${exec cat /home/nurgasemetey/Desktop/scripts/current-task.txt}
 -- ]]
 conky.text = [[
-${color4} No Novelty
-
 ${color3}--------------------
 ${color5}Today Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros.sh} 
 ${color5}Yesterday Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/previous-day-number-pomodoros.sh}
