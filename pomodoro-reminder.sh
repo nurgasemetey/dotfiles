@@ -1,1 +1,1 @@
-/usr/bin/notify-send 'Hello world!' 'This is an example notification.' --icon=dialog-information
+/usr/bin/notify-send 'WARNING' 'Please start pomodoro session' --icon=dialog-information -u CRITICAL
