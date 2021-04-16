@@ -85,6 +85,7 @@ plugins=(
 	fzf
 	folder-categorizer
 	colorize
+	transfer
 )
 
 source $ZSH/oh-my-zsh.sh
