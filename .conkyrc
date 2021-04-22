@@ -90,6 +90,6 @@ ${color4}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-
 
 ${color3}--------------------
 
-${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
+${color2} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
 
 ]]
