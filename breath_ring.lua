@@ -25,7 +25,7 @@ settings_table = {
         fg_colour = 0x558888,
         fg_alpha = 1,
         x = 120,
-        y = 600,
+        y = 900,
         radius = 75,
         thickness = 10,
         start_angle = 0,
@@ -147,7 +147,7 @@ function conky_draw_text()
         {
             text = "Exhale",
             x = 80,
-            y = 600,
+            y = 900,
             colour = {
                 {1, 0xDDDDDD, 1}, {1, 0xEEEEEE, 1}, {1, 0xDDDDDD, 1}
             },
