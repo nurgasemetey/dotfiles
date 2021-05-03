@@ -39,6 +39,7 @@ conky.config = {
     color4 = 'orange',
     color5 = 'white',
     color6 = 'white',
+    color7 = 'green',
     default_outline_color = 'white',
     default_shade_color = 'white',
     draw_graph_borders = true,
@@ -77,22 +78,25 @@ ${color3}----------------------
 ${color5}Today Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros.sh} 
 ${color5}Yesterday Pom: ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/previous-day-number-pomodoros.sh}
 
+${color3}---------------------
 
-${color3}----------------------
-${color4}00-03 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 0-3}
-${color4}03-06 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 3-6}
-${color4}06-09 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 6-9}
-${color4}09-12 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 9-12}
-${color4}12-15 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 12-15}
-${color4}15-18 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}
-${color4}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}
-${color4}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}
-
-#${color3}---------------------
-#${color1}${exec python3 /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/python-last-intentions.py}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 0-03}>=50}${color7}00-03 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 0-03}${else}${color2}00-03 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 00-03}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 3-6}>=50}${color7}03-06 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 3-6}${else}${color2}03-06 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 3-6}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 6-9}>=50}${color7}06-09 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 6-9}${else}${color2}06-09 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 6-9}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 9-12}>=50}${color7}09-12 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 9-12}${else}${color2}09-12 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 9-12}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 12-15}>=50}${color7}12-15 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 12-15}${else}${color2}12-15 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 12-15}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}>=50}${color7}15-18 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}${else}${color2}15-18 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}>=50}${color7}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}${else}${color2}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}${endif}
+${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}>=50}${color7}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}${else}${color2}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}${endif}
 
 ${color3}----------------------
 
 ${color2} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
+
+
+#${color3}---------------------
+
+#${color1}${exec python3 /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/python-last-intentions.py}
+
 
 ]]
