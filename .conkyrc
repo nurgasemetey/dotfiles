@@ -38,7 +38,7 @@ conky.config = {
     color3 = 'white',
     color4 = 'orange',
     color5 = 'white',
-    color6 = 'white',
+    color6 = 'blue',
     color7 = 'green',
     default_outline_color = 'white',
     default_shade_color = 'white',
@@ -88,10 +88,16 @@ ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environ
 ${color3}----------------------
 ${color1} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
 ${color3}----------------------
-${color1}${exec python3 /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/python-last-intentions.py}
+${color1}\# things: ${execp cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/intentions.txt| wc -l }
 ${color3}----------------------
-${color1}${font Symbola:size=24}✔ ${font}DAILY ROUTINES 
-${color1}${font Symbola:size=24}✔ ${font}WEEKLY ROUTINES 
-${color1}${font Symbola:size=24}✔ ${font}MONTHLY ROUTINES 
+${color1}${font Symbola:size=24}☑️ ${font}DAILY ROUTINES 
+${color1}${font Symbola:size=24}☑️ ${font}WEEKLY ROUTINES 
+${color1}${font Symbola:size=24}☑️ ${font}MONTHLY ROUTINES 
+${color3}----------------------
+${color1}${font Symbola:size=18}☑️ ${font}Check at 9:00
+${color1}${font Symbola:size=18}☑️ ${font}Check at 12:00
+${color1}${font Symbola:size=18}☑️ ${font}Check at 15:00
+${color1}${font Symbola:size=18}☑️ ${font}Check at 18:00
+${color1}${font Symbola:size=18}☑️ ${font}Check at 21:00 
 
 ]]
