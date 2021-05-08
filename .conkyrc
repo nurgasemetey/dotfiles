@@ -86,7 +86,7 @@ ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environ
 ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}>=50}${color7}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}${else}${color2}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}${endif}
 ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}>=50}${color7}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}${else}${color2}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}${endif}
 ${color3}----------------------
-${color1} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
+${color7} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
 ${color3}----------------------
 ${color1}\# things: ${execp cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/intentions.txt| wc -l }
 ${color3}----------------------
