@@ -94,10 +94,11 @@ ${color1}${font Symbola:size=24}☑️ ${font}DAILY ROUTINES
 ${color1}${font Symbola:size=24}☑️ ${font}WEEKLY ROUTINES 
 ${color1}${font Symbola:size=24}☑️ ${font}MONTHLY ROUTINES 
 ${color3}----------------------
-${color1}${font Symbola:size=18}☑️ ${font}Check at 9:00
-${color1}${font Symbola:size=18}☑️ ${font}Check at 12:00
-${color1}${font Symbola:size=18}☑️ ${font}Check at 15:00
-${color1}${font Symbola:size=18}☑️ ${font}Check at 18:00
-${color1}${font Symbola:size=18}☑️ ${font}Check at 21:00 
+Internet access
+${color1}${font Symbola:size=18}☑️ ${font}9-9:30
+${color1}${font Symbola:size=18}☑️ ${font}12-12:30
+${color1}${font Symbola:size=18}☑️ ${font}15-15:30
+${color1}${font Symbola:size=18}☑️ ${font}18-18:30
+${color1}${font Symbola:size=18}☑️ ${font}21-21:30 
 
 ]]
