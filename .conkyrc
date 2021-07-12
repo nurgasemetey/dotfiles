@@ -91,7 +91,12 @@ ${color7} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environm
 ${color3}----------------------
 ${color1}\# things: ${execp cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/intentions.txt| wc -l }
 ${color3}----------------------
-${color1}${font Symbola:size=24}☑️ ${font}DAILY ROUTINES 
-${color1}${font Symbola:size=24}☑️ ${font}WEEKLY ROUTINES 
-${color1}${font Symbola:size=24}☑️ ${font}MONTHLY ROUTINES 
+${color1} No sports
+${color1} No esports
+${color1} No politics
+${color1} No news
 ]]
+
+-- ${color1}${font Symbola:size=24}☑️ ${font}DAILY ROUTINES 
+-- ${color1}${font Symbola:size=24}☑️ ${font}WEEKLY ROUTINES 
+-- ${color1}${font Symbola:size=24}☑️ ${font}MONTHLY ROUTINES 
