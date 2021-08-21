@@ -1,3 +1,4 @@
+# conky -q -c /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/.conkyrc
 -- vim: ts=4 sw=4 noet ai cindent syntax=lua
 --[[
 Conky, a system monitor, based on torsmo
@@ -86,10 +87,10 @@ ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environ
 ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}>=0}${color7}15-18 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}${else}${color2}15-18 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 15-18}${endif}
 ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}>=0}${color7}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}${else}${color2}18-21 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 18-21}${endif}
 ${if_match ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}>=0}${color7}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}${else}${color2}21-24 ${execbar /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/number-pomodoros-by-interval.sh 21-24}${endif}
-${color3}----------------------
-${color7} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
-${color3}----------------------
-${color1}\# things: ${execp cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/intentions.txt| wc -l }
+#${color3}----------------------
+# ${color7} ${exec /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/scripts/conky-task-list.sh}
+#${color3}----------------------
+#${color1}\# things: ${execp cat /mnt/fd68f224-e30e-4ea0-8bd8-7f2a4c4d5ab0/nurgasemetey-environment/personal-notes/tmp-storage/intentions.txt| wc -l }
 ${color3}----------------------
 ${color1} No sports
 ${color1} No esports
